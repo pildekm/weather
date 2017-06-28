@@ -7,6 +7,7 @@ city_id = []
 co_code = 'hr'
 citys = ['Zagreb', 'Rijeka', 'Varazdin', 'Dubrovnik', 'Rovinj', 'Osijek', 'Split']
 apiKey = '194e2d2dcdd41a19a1f4b08920a897d0'
+
 weather_data = []
 
 for city in citys:
