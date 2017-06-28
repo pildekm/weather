@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_334f9416b98845a2bf9dd947a7083039 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_334f9416b98845a2bf9dd947a7083039" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_334f9416b98845a2bf9dd947a7083039 = L.map(
+                                  'map_334f9416b98845a2bf9dd947a7083039',
+                                  {center: [0,0],
+                                  zoom: 1,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_13c3b481a9d248fdab16f4f6c854d91d = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_334f9416b98845a2bf9dd947a7083039);
+
+        
+    
+            var feature_group_7c620b14ff944b5db2cac951ecd5326e = L.featureGroup(
+                ).addTo(map_334f9416b98845a2bf9dd947a7083039);
+        
+    
+
+            var marker_0cae015f2e974dd587082e4f8ce231de = L.marker(
+                [45.81,15.98],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_7c620b14ff944b5db2cac951ecd5326e);
+            
+    
+
+                var icon_2d3f1aece38d4273ae3adb5607bc0d4c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0cae015f2e974dd587082e4f8ce231de.setIcon(icon_2d3f1aece38d4273ae3adb5607bc0d4c);
+            
+    
+            var popup_5f02444bc3044ab7b05ac3c20e6bc2db = L.popup({maxWidth: '300'});
+
+            
+                var html_893db7004824420cb1c4bb526f1df345 = $('<div id="html_893db7004824420cb1c4bb526f1df345" style="width: 100.0%; height: 100.0%;">Zagreb Temperatura: 22.87 C </div>')[0];
+                popup_5f02444bc3044ab7b05ac3c20e6bc2db.setContent(html_893db7004824420cb1c4bb526f1df345);
+            
+
+            marker_0cae015f2e974dd587082e4f8ce231de.bindPopup(popup_5f02444bc3044ab7b05ac3c20e6bc2db);
+
+            
+        
+    
+
+            var marker_20f2b114f8594b29af7e0382d624e954 = L.marker(
+                [45.34,14.41],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_7c620b14ff944b5db2cac951ecd5326e);
+            
+    
+
+                var icon_b0e8edbdec8e48f58a41dd6a27a8c166 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_20f2b114f8594b29af7e0382d624e954.setIcon(icon_b0e8edbdec8e48f58a41dd6a27a8c166);
+            
+    
+            var popup_90c86a12ad494dfc83f59c14953a043c = L.popup({maxWidth: '300'});
+
+            
+                var html_7db23ce51c594b17a923a4a1572e0232 = $('<div id="html_7db23ce51c594b17a923a4a1572e0232" style="width: 100.0%; height: 100.0%;">Rijeka Temperatura: 20.57 C </div>')[0];
+                popup_90c86a12ad494dfc83f59c14953a043c.setContent(html_7db23ce51c594b17a923a4a1572e0232);
+            
+
+            marker_20f2b114f8594b29af7e0382d624e954.bindPopup(popup_90c86a12ad494dfc83f59c14953a043c);
+
+            
+        
+    
+
+            var marker_b3c9e81e9c8841649f6188503dc5895f = L.marker(
+                [46.3,16.34],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_7c620b14ff944b5db2cac951ecd5326e);
+            
+    
+
+                var icon_9bf39ffcb9434f0da33ea83421b6e5ce = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b3c9e81e9c8841649f6188503dc5895f.setIcon(icon_9bf39ffcb9434f0da33ea83421b6e5ce);
+            
+    
+            var popup_3450464f26ed49a0a22c0952b7a7f713 = L.popup({maxWidth: '300'});
+
+            
+                var html_0447ac6ba09c4db0ba1122f20a4fd45b = $('<div id="html_0447ac6ba09c4db0ba1122f20a4fd45b" style="width: 100.0%; height: 100.0%;">Varazdin Temperatura: 23.51 C </div>')[0];
+                popup_3450464f26ed49a0a22c0952b7a7f713.setContent(html_0447ac6ba09c4db0ba1122f20a4fd45b);
+            
+
+            marker_b3c9e81e9c8841649f6188503dc5895f.bindPopup(popup_3450464f26ed49a0a22c0952b7a7f713);
+
+            
+        
+    
+
+            var marker_19a041591cf648909e577c86558508e1 = L.marker(
+                [42.65,18.09],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_7c620b14ff944b5db2cac951ecd5326e);
+            
+    
+
+                var icon_9783d7b52d1b4b6d96425ef1ad1b3cb6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_19a041591cf648909e577c86558508e1.setIcon(icon_9783d7b52d1b4b6d96425ef1ad1b3cb6);
+            
+    
+            var popup_71bb069cc5784b81af5c8081e3993575 = L.popup({maxWidth: '300'});
+
+            
+                var html_c2096fdd1df948b4a2d7d5f07760e203 = $('<div id="html_c2096fdd1df948b4a2d7d5f07760e203" style="width: 100.0%; height: 100.0%;">Dubrovnik Temperatura: 19.89 C </div>')[0];
+                popup_71bb069cc5784b81af5c8081e3993575.setContent(html_c2096fdd1df948b4a2d7d5f07760e203);
+            
+
+            marker_19a041591cf648909e577c86558508e1.bindPopup(popup_71bb069cc5784b81af5c8081e3993575);
+
+            
+        
+    
+
+            var marker_827e007000f3404fa47582a4c731cef3 = L.marker(
+                [45.08,13.64],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_7c620b14ff944b5db2cac951ecd5326e);
+            
+    
+
+                var icon_3470036629d4424eaba763284a361d9d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_827e007000f3404fa47582a4c731cef3.setIcon(icon_3470036629d4424eaba763284a361d9d);
+            
+    
+            var popup_905123bb47474b53a2855f4994f1f9f0 = L.popup({maxWidth: '300'});
+
+            
+                var html_54ac6f3ea60e426db57e41e3bd1d49a4 = $('<div id="html_54ac6f3ea60e426db57e41e3bd1d49a4" style="width: 100.0%; height: 100.0%;">Rovinj Temperatura: 20.81 C </div>')[0];
+                popup_905123bb47474b53a2855f4994f1f9f0.setContent(html_54ac6f3ea60e426db57e41e3bd1d49a4);
+            
+
+            marker_827e007000f3404fa47582a4c731cef3.bindPopup(popup_905123bb47474b53a2855f4994f1f9f0);
+
+            
+        
+    
+
+            var marker_fbef769140bc4890a5312044b8142667 = L.marker(
+                [45.55,18.69],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_7c620b14ff944b5db2cac951ecd5326e);
+            
+    
+
+                var icon_eb84bdf737914774a95cf5664bd52178 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fbef769140bc4890a5312044b8142667.setIcon(icon_eb84bdf737914774a95cf5664bd52178);
+            
+    
+            var popup_f0297d14da194065bc257dda11ed78bd = L.popup({maxWidth: '300'});
+
+            
+                var html_87ebc55fe07047188e07be489efb5af4 = $('<div id="html_87ebc55fe07047188e07be489efb5af4" style="width: 100.0%; height: 100.0%;">Osijek Temperatura: 19.0 C </div>')[0];
+                popup_f0297d14da194065bc257dda11ed78bd.setContent(html_87ebc55fe07047188e07be489efb5af4);
+            
+
+            marker_fbef769140bc4890a5312044b8142667.bindPopup(popup_f0297d14da194065bc257dda11ed78bd);
+
+            
+        
+    
+
+            var marker_db9a186e664d4ff6b9d6dceb059ff0db = L.marker(
+                [43.51,16.44],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_7c620b14ff944b5db2cac951ecd5326e);
+            
+    
+
+                var icon_0367590bc2684278aa809dd2d8851a3e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_db9a186e664d4ff6b9d6dceb059ff0db.setIcon(icon_0367590bc2684278aa809dd2d8851a3e);
+            
+    
+            var popup_832824d2120546e5b53a44a2fc2e43cf = L.popup({maxWidth: '300'});
+
+            
+                var html_0fab5257897c403287a3101b58733020 = $('<div id="html_0fab5257897c403287a3101b58733020" style="width: 100.0%; height: 100.0%;">Split Temperatura: 21.43 C </div>')[0];
+                popup_832824d2120546e5b53a44a2fc2e43cf.setContent(html_0fab5257897c403287a3101b58733020);
+            
+
+            marker_db9a186e664d4ff6b9d6dceb059ff0db.bindPopup(popup_832824d2120546e5b53a44a2fc2e43cf);
+
+            
+        
+</script>
