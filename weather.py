@@ -3,6 +3,7 @@ import requests
 import folium
 import json
 
+city_id = []
 co_code = 'hr'
 citys = ['Zagreb', 'Rijeka', 'Varazdin', 'Dubrovnik', 'Rovinj', 'Osijek', 'Split']
 apiKey = '194e2d2dcdd41a19a1f4b08920a897d0'
@@ -15,6 +16,7 @@ for city in citys:
     weather_data.append(data)
 
 #T(°C) = T(K) - 273.15
+
 
 map = folium.Map(location=None, zoom_start=11)
 
